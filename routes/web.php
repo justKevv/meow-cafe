@@ -16,7 +16,7 @@ Route::put('/update/{id}', [PegawaiController::class,'update']);
 Route::resource('/menu', MenuController::class);
 Route::get('/menu/{id}', [MenuController::class, 'destroy']);
 Route::get('/menu/{id_menu}', [MenuController::class, 'edit']);
-Route::delete('/menu/{id}', [MenuController::class, 'update']);
+Route::put('/menu/{id}', [MenuController::class, 'update']);
 
 Route::resource('/meja', MejaController::class);
 Route::get('/meja/{id}', [MejaController::class, 'destroy']);
@@ -26,8 +26,3 @@ Route::delete('/meja/{id}', [MejaController::class, 'update']);
 Route::resource('/order', OrderController::class);
 
 Route::get('/bill/{id_order}', '\App\Http\Controllers\BillController@index')->name('bill');
-
-
-
-
-

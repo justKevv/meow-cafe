@@ -15,6 +15,6 @@ class Pegawai extends Model
     public $timestamps = false;
 
     protected $guarded = [
-        'id_pegawai'
+        'id_pegawai',
     ];
 }

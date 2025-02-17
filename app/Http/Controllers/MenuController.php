@@ -84,7 +84,7 @@ class MenuController extends Controller
         try {
             $menu = Menu::findOrFail($id_menu);
             $menu->delete();
-            
+
             return redirect('/menu');
         } catch (\Exception $e) {
             dd($e);

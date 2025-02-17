@@ -85,7 +85,7 @@ class PegawaiController extends Controller
         try {
             $pegawai = Pegawai::findOrFail($id_pegawai);
             $pegawai->delete();
-            
+
             return redirect('/');
         } catch (\Exception $e) {
             dd($e);
